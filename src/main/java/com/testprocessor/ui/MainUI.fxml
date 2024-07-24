@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.TextFlow?>
+<?import javafx.scene.control.SplitPane?>
+
+
+<?import javafx.scene.layout.ColumnConstraints?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MainUIController" spacing="15" stylesheets="@styles.css">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <SplitPane dividerPositions="0.6" VBox.vgrow="ALWAYS">
+        <VBox spacing="15" SplitPane.resizableWithParent="true">
+            <padding>
+                <Insets top="5" right="5" bottom="5" left="5"/>
+            </padding>
+            <GridPane hgap="10" vgap="10">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="NEVER" minWidth="100"/>
+                    <ColumnConstraints hgrow="ALWAYS"/>
+                    <ColumnConstraints hgrow="NEVER" minWidth="120"/>
+                </columnConstraints>
+
+                <Label text="Regex Pattern:" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="label-header"/>
+                <TextField fx:id="regexField" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+                <Label text="Text Pool:" GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="label-header"/>
+                <TextArea fx:id="textPool" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.columnSpan="2" prefHeight="150"/>
+
+                <HBox spacing="10" alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                    <Button text="Find Matches" onAction="#findMatches" styleClass="button-primary"/>
+                    <Button text="Upload File" onAction="#updateEntry" styleClass="button-secondary"/>
+                </HBox>
+
+                <Label text="Number of Matches:" GridPane.columnIndex="0" GridPane.rowIndex="3" styleClass="label-header"/>
+                <Label fx:id="matchCount" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.columnSpan="2"/>
+
+                <Label text="Replacement Text:" GridPane.columnIndex="0" GridPane.rowIndex="4" styleClass="label-header"/>
+                <TextField fx:id="replacementField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                <Button text="Replace Matches" onAction="#replaceMatches" GridPane.columnIndex="2" GridPane.rowIndex="4" styleClass="button-primary"/>
+            </GridPane>
+
+            <VBox spacing="10" VBox.vgrow="ALWAYS">
+                <Label text="Result:" styleClass="label-header"/>
+                <ScrollPane fitToWidth="true" fitToHeight="true" VBox.vgrow="ALWAYS">
+                    <TextFlow fx:id="resultText" styleClass="result-text"/>
+                </ScrollPane>
+            </VBox>
+        </VBox>
+
+        <VBox spacing="10">
+            <padding>
+                <Insets top="5" right="5" bottom="5" left="5"/>
+            </padding>
+            <Label text="Added Entries:" styleClass="label-header"/>
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="Add Entry" onAction="#addEntry" styleClass="button-primary"/>
+                <Button text="Delete Entry" onAction="#deleteEntry" styleClass="button-secondary"/>
+                <Button text="Export Entry" onAction="#exportEntry" styleClass="button-secondary"/>
+            </HBox>
+            <ListView fx:id="entriesListView" VBox.vgrow="ALWAYS"/>
+
+
+        </VBox>
+    </SplitPane>
+</VBox>
