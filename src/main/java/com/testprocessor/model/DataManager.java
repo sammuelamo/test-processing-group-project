@@ -1,4 +1,4 @@
-package com.security.model;
+package com.testprocessor.model;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
