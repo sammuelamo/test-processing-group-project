@@ -1,4 +1,4 @@
-package com.testprocessor.ui;
+package com.testprocessor.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
