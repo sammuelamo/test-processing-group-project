@@ -1,4 +1,4 @@
-package com.testprocessor.model;
+package com.textprocessor.model;
 
 import java.util.Objects;
 import java.util.regex.Pattern;
