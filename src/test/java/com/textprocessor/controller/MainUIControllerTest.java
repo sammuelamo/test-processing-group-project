@@ -3,6 +3,7 @@ package com.textprocessor.controller;
 //import com.testprocessor.model.
 import com.textprocessor.controller.MainUIController;
 import com.textprocessor.model.TextEntry;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -135,8 +136,15 @@ public class MainUIControllerTest extends ApplicationTest {
 
     @Test
     public void testAddEntry() {
-        TextFlow resultText = (TextFlow) lookup("#resultText").query();
-        resultText.getChildren().add(new javafx.scene.text.Text("Sample text."));
+        // Run UI modifications on the JavaFX Application Thread
+        Platform.runLater(() -> {
+            TextFlow resultText = (TextFlow) lookup("#resultText").query();
+            resultText.getChildren().add(new javafx.scene.text.Text("Sample text."));
+        });
+
+        // Wait for the runLater to complete
+        WaitForAsyncUtils.waitForFxEvents();
+
         clickOn(lookup("#addEntry").queryButton());
 
         ListView<TextEntry> entriesListView = (ListView<TextEntry>) lookup("#entriesListView").query();

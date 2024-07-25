@@ -65,7 +65,7 @@
             </padding>
             <Label text="Added Entries:" styleClass="label-header"/>
             <HBox spacing="10" alignment="CENTER">
-                <Button text="Add Entry" onAction="#addEntry" styleClass="button-primary"/>
+                <Button text="Add Entry" fx:id="addEntry" onAction="#addEntry" styleClass="button-primary"/>
                 <Button text="Delete Entry" fx:id="deleteEntry" onAction="#deleteEntry" styleClass="button-secondary"/>
                 <Button text="Export Entry" fx:id="exportEntry" onAction="#exportEntry" styleClass="button-secondary"/>
             </HBox>
