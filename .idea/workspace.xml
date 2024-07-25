@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ac72cc-ce46-4bf0-b190-2c1e2d9b6c50" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/textprocessor/controller/MainUIControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/textprocessor/controller/MainUIControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +28,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.MainUIControllerTest.executor": "Run",
+    "JUnit.MainUIControllerTest.testAddEntry.executor": "Run",
     "JUnit.MainUIControllerTest.testReplaceMatches_validPattern.executor": "Debug",
     "Maven.testprocessingtool [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -51,6 +53,22 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="MainUIControllerTest.testAddEntry" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testprocessingtool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.textprocessor.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.textprocessor.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.textprocessor.controller.MainUIControllerTest" />
+      <option name="METHOD_NAME" value="testAddEntry" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="test-processing-group-4" />
       <method v="2">
@@ -64,6 +82,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MainUIControllerTest.testAddEntry" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>

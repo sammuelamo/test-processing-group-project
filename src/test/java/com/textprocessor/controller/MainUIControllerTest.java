@@ -136,19 +136,33 @@ public class MainUIControllerTest extends ApplicationTest {
 
     @Test
     public void testAddEntry() {
-        // Run UI modifications on the JavaFX Application Thread
+        // Ensure we're on the JavaFX thread
         Platform.runLater(() -> {
-            TextFlow resultText = (TextFlow) lookup("#resultText").query();
+            TextFlow resultText = lookup("#resultText").query();
+            assertNotNull(resultText, "resultText should not be null");
+            resultText.getChildren().clear();
             resultText.getChildren().add(new javafx.scene.text.Text("Sample text."));
         });
 
-        // Wait for the runLater to complete
+        // Wait for the UI update to complete
         WaitForAsyncUtils.waitForFxEvents();
 
-        clickOn(lookup("#addEntry").queryButton());
+        // Ensure the button exists and is clickable
+        Button addEntryButton = lookup("#addEntry").queryButton();
+        assertNotNull(addEntryButton, "addEntry button should not be null");
+        clickOn(addEntryButton);
 
-        ListView<TextEntry> entriesListView = (ListView<TextEntry>) lookup("#entriesListView").query();
-        assertEquals(1, entriesListView.getItems().size());
+        // Wait for potential async operations
+        WaitForAsyncUtils.waitForFxEvents();
+
+        // Verify the ListView
+        ListView<TextEntry> entriesListView = lookup("#entriesListView").query();
+        assertNotNull(entriesListView, "entriesListView should not be null");
+
+        // Wait a bit and keep checking (with a timeout)
+        WaitForAsyncUtils.waitForAsync(5000, () -> entriesListView.getItems().size() == 1);
+
+        assertEquals(1, entriesListView.getItems().size(), "entriesListView should contain one item");
     }
 
     @Test
@@ -163,15 +177,15 @@ public class MainUIControllerTest extends ApplicationTest {
         assertTrue(entriesListView.getItems().isEmpty());
     }
 
-    @Test
-    public void testUpdateEntry() {
-        // This test might require mocking the FileChooser to return a specific file.
-    }
-
-    @Test
-    public void testExportEntry() {
-        // This test might require mocking the FileChooser and verifying the file output.
-    }
+//    @Test
+//    public void testUpdateEntry() {
+//        // This test might require mocking the FileChooser to return a specific file.
+//    }
+//
+//    @Test
+//    public void testExportEntry() {
+//        // This test might require mocking the FileChooser and verifying the file output.
+//    }
     private void printNodeHierarchy(Node node, int level) {
         String indent = " ".repeat(level * 2);
         System.out.println(indent + node.getClass().getSimpleName() + " - " + node.getId());
