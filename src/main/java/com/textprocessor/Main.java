@@ -1,6 +1,4 @@
-package com.testprocessor;
-
-
+package com.textprocessor;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,7 +14,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            VBox root = FXMLLoader.load(getClass().getResource("/com/testprocessor/ui/MainUI.fxml"));
+            VBox root = FXMLLoader.load(getClass().getResource("/com/textprocessor/utils/fxml/MainUI.fxml"));
             
             Scene scene = new Scene(root, 600, 400);
             primaryStage.setTitle("Text Processing Tool");

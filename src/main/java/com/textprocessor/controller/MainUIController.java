@@ -1,4 +1,4 @@
-package com.testprocessor.ui;
+package com.textprocessor.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -9,8 +9,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
-import com.testprocessor.model.DataManager;
-import com.testprocessor.model.TextEntry;
+import com.textprocessor.model.DataManager;
+import com.textprocessor.model.TextEntry;
 
 import java.io.File;
 import java.io.FileWriter;
