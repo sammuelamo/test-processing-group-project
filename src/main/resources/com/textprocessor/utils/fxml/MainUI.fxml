@@ -39,7 +39,7 @@
                 <TextArea fx:id="textPool" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.columnSpan="2" prefHeight="150"/>
 
                 <HBox spacing="10" alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
-                    <Button text="Find Matches" fx:id="findMatchesButton" onAction="#findMatches" styleClass="button-primary"/>
+                    <Button text="Find Matches" fx:id="findMatches" onAction="#findMatches" styleClass="button-primary"/>
                     <Button text="Upload File" fx:id="updateEntry" onAction="#updateEntry" styleClass="button-secondary"/>
                 </HBox>
 

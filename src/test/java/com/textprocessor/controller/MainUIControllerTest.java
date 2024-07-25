@@ -75,8 +75,7 @@ public class MainUIControllerTest extends ApplicationTest {
         clickOn(textPool).write("Here are some numbers: 123, 456, and 789.");
 
         WaitForAsyncUtils.waitForFxEvents();
-        Button findMatchesButton = (Button) lookup("#findMatchesButton").queryButton();
-        clickOn(findMatchesButton);
+        clickOn(lookup("#findMatches").queryButton());
 
         Label matchCount = (Label) lookup("#matchCount").query();
         assertEquals("3", matchCount.getText());
@@ -86,9 +85,9 @@ public class MainUIControllerTest extends ApplicationTest {
     public void testFindMatches_invalidPattern() {
         TextField regexField = (TextField) lookup("#regexField").query();
         TextArea textPool = (TextArea) lookup("#textPool").query();
-        clickOn(regexField).write("[a-z");
+        clickOn(regexField).write("[a-z]");
         clickOn(textPool).write("Here is some text.");
-        clickOn(lookup("findMatches").queryButton());
+        clickOn(lookup("#findMatches").queryButton());
 
         Label matchCount = (Label) lookup("#matchCount").query();
         assertEquals("", matchCount.getText());

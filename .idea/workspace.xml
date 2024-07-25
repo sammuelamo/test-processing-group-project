@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3ac72cc-ce46-4bf0-b190-2c1e2d9b6c50" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/textprocessor/controller/MainUIControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprocessor/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textprocessor/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprocessor/model/DataManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textprocessor/model/DataManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprocessor/model/TextEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textprocessor/model/TextEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprocessor/ui/MainUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/textprocessor/utils/fxml/MainUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprocessor/ui/MainUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/textprocessor/controller/MainUIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprocessor/ui/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/textprocessor/utils/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/testprocessor/ui/MainUI.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/testprocessor/ui/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/testprocessor/ui/MainUIControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/main/java/com/testprocessor/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/main/java/com/textprocessor/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/textprocessor/utils/fxml/MainUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/textprocessor/utils/fxml/MainUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/textprocessor/controller/MainUIControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/textprocessor/controller/MainUIControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +29,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JUnit.MainUIControllerTest.executor": "Run",
+    "JUnit.MainUIControllerTest.testReplaceMatches_validPattern.executor": "Debug",
+    "Maven.testprocessingtool [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Merging test",
+    "git-widget-placeholder": "test",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/samuel/Desktop/test-processing-group-4",
     "node.js.detected.package.eslint": "true",
@@ -108,5 +100,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/textprocessor/controller/MainUIControllerTest.java</url>
+          <line>119</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
