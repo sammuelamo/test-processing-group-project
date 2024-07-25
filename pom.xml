@@ -79,7 +79,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.testprocessor.Main</mainClass>
+                            <mainClass>com.textprocessor.Main</mainClass>
                         </configuration>
                     </execution>
                 </executions>

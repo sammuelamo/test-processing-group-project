@@ -1,6 +1,8 @@
-package com.testprocessor.ui;
+package com.textprocessor.controller;
 
-import com.testprocessor.model.TextEntry;
+//import com.testprocessor.model.
+import com.textprocessor.controller.MainUIController;
+import com.textprocessor.model.TextEntry;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -23,7 +25,7 @@ public class MainUIControllerTest extends ApplicationTest {
 
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/testprocessor/ui/MainUI.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/textprocessor/utils/fxml/MainUI.fxml")) ;
         Parent root = loader.load();
         controller = loader.getController();
 

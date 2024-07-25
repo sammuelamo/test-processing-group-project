@@ -1,4 +1,4 @@
-package com.testprocessor.model;
+package com.textprocessor.model;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
