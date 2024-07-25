@@ -1,11 +1,7 @@
 package com.testprocessor.ui;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
@@ -25,7 +21,7 @@ import java.util.regex.Pattern;
 public class MainUIController {
 
     @FXML
-    private TextField regexField;
+    TextField regexField;
 
     @FXML
     private TextArea textPool;
@@ -38,6 +34,12 @@ public class MainUIController {
 
     @FXML
     private TextFlow resultText;
+
+    @FXML
+    private Button replaceButton;
+
+    @FXML
+    private Button findMatchesButton;
 
     @FXML
     private ListView<TextEntry> entriesListView;

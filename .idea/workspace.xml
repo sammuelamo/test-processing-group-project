@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e3ac72cc-ce46-4bf0-b190-2c1e2d9b6c50" name="Changes" comment="" />
+    <list default="true" id="e3ac72cc-ce46-4bf0-b190-2c1e2d9b6c50" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testprocessor/ui/MainUIControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprocessor/ui/MainUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprocessor/ui/MainUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testprocessor/ui/MainUIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testprocessor/ui/MainUIController.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,9 +38,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.MainUIControllerTest.executor": "Run",
+    "JUnit.MainUIControllerTest.testFindMatches_validPattern.executor": "Run",
+    "Maven.testprocessingtool [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "test",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/samuel/Desktop/test-processing-group-4",
     "node.js.detected.package.eslint": "true",
@@ -45,7 +54,28 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
   <component name="RunManager">
+    <configuration name="MainUIControllerTest.testFindMatches_validPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="testprocessingtool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.testprocessor.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.testprocessor.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.testprocessor.ui.MainUIControllerTest" />
+      <option name="METHOD_NAME" value="testFindMatches_validPattern" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="test-processing-group-4" />
       <method v="2">
@@ -59,6 +89,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MainUIControllerTest.testFindMatches_validPattern" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -77,6 +112,8 @@
       <option name="presentableId" value="Default" />
       <updated>1721821268741</updated>
       <workItem from="1721821269895" duration="2253000" />
+      <workItem from="1721854847134" duration="3160000" />
+      <workItem from="1721897539911" duration="1650000" />
     </task>
     <servers />
   </component>
