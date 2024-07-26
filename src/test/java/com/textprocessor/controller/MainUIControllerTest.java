@@ -177,15 +177,6 @@ public class MainUIControllerTest extends ApplicationTest {
         assertTrue(entriesListView.getItems().isEmpty());
     }
 
-//    @Test
-//    public void testUpdateEntry() {
-//        // This test might require mocking the FileChooser to return a specific file.
-//    }
-//
-//    @Test
-//    public void testExportEntry() {
-//        // This test might require mocking the FileChooser and verifying the file output.
-//    }
     private void printNodeHierarchy(Node node, int level) {
         String indent = " ".repeat(level * 2);
         System.out.println(indent + node.getClass().getSimpleName() + " - " + node.getId());
