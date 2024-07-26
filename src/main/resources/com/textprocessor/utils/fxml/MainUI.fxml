@@ -39,8 +39,8 @@
                 <TextArea fx:id="textPool" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.columnSpan="2" prefHeight="150"/>
 
                 <HBox spacing="10" alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
-                    <Button text="Find Matches" onAction="#findMatches" styleClass="button-primary"/>
-                    <Button text="Upload File" onAction="#updateEntry" styleClass="button-secondary"/>
+                    <Button text="Find Matches" fx:id="findMatches" onAction="#findMatches" styleClass="button-primary"/>
+                    <Button text="Upload File" fx:id="updateEntry" onAction="#updateEntry" styleClass="button-secondary"/>
                 </HBox>
 
                 <Label text="Number of Matches:" GridPane.columnIndex="0" GridPane.rowIndex="3" styleClass="label-header"/>
@@ -48,7 +48,7 @@
 
                 <Label text="Replacement Text:" GridPane.columnIndex="0" GridPane.rowIndex="4" styleClass="label-header"/>
                 <TextField fx:id="replacementField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
-                <Button text="Replace Matches" onAction="#replaceMatches" GridPane.columnIndex="2" GridPane.rowIndex="4" styleClass="button-primary"/>
+                <Button text="Replace Matches" fx:id="replaceMatches" onAction="#replaceMatches" GridPane.columnIndex="2" GridPane.rowIndex="4" styleClass="button-primary"/>
             </GridPane>
 
             <VBox spacing="10" VBox.vgrow="ALWAYS">
@@ -65,9 +65,9 @@
             </padding>
             <Label text="Added Entries:" styleClass="label-header"/>
             <HBox spacing="10" alignment="CENTER">
-                <Button text="Add Entry" onAction="#addEntry" styleClass="button-primary"/>
-                <Button text="Delete Entry" onAction="#deleteEntry" styleClass="button-secondary"/>
-                <Button text="Export Entry" onAction="#exportEntry" styleClass="button-secondary"/>
+                <Button text="Add Entry" fx:id="addEntry" onAction="#addEntry" styleClass="button-primary"/>
+                <Button text="Delete Entry" fx:id="deleteEntry" onAction="#deleteEntry" styleClass="button-secondary"/>
+                <Button text="Export Entry" fx:id="exportEntry" onAction="#exportEntry" styleClass="button-secondary"/>
             </HBox>
             <ListView fx:id="entriesListView" VBox.vgrow="ALWAYS"/>
 
