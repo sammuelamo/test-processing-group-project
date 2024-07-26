@@ -15,7 +15,7 @@
 
 
 <?import javafx.scene.layout.ColumnConstraints?>
-<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MainUIController" spacing="15" stylesheets="@styles.css">
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.textprocessor.controller.MainUIController" spacing="15" stylesheets="@../css/styles.css">
     <padding>
         <Insets top="20" right="20" bottom="20" left="20"/>
     </padding>
