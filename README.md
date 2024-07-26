@@ -113,9 +113,9 @@ Users can then run the application using the command provided in the "Running th
 Contributions to the Text Processing Tool are welcome. Please follow these steps:
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create a feature branch (`git checkout -b feature/0006-user-notification`)
+3. Commit your changes (`git commit -m 'feat: added user notification'`)
+4. Push to the branch (`git push origin feature/0006-user-notification`)
 5. Open a Pull Request
 
 ## License
@@ -124,4 +124,4 @@ MIT License
 
 
 
-Project Link: [https://github.com/yourusername/text-processing-tool](https://github.com/yourusername/text-processing-tool)
+Project Link: https://github.com/samuelnapasco/test-processing-group-project.git
