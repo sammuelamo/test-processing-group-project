@@ -1,7 +1,6 @@
 package com.textprocessor.controller;
 
-//import com.testprocessor.model.
-import com.textprocessor.controller.MainUIController;
+
 import com.textprocessor.model.TextEntry;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;

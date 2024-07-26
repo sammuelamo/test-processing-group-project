@@ -93,20 +93,6 @@ public class DataManager {
         }
     }
 
-    /**
-     * Updates the content of a TextEntry in the ObservableSet.
-     *
-     * @param id         ID of the TextEntry to update
-     * @param newContent New content to set
-     */
-    public void updateSetEntry(String id, String newContent) {
-        for (TextEntry entry : entriesSet) {
-            if (entry.getId().equals(id)) {
-                entry.setContent(newContent);
-                break;
-            }
-        }
-    }
 
     /**
      * Updates the content of a TextEntry in the ObservableMap.
